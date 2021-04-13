@@ -75,6 +75,8 @@
                 $('#team_email').val(data.team_email);
                 $('#support_email').val(data.support_email);
                 $('#address').val(data.address);
+                $('#about_us_en').val(data.about_us_en);
+                $('#about_us_ar').val(data.about_us_ar);
                 $('#id').val(data.id);
             }
         });

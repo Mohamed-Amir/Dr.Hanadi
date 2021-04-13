@@ -22,6 +22,8 @@ class CreateContactUsesTable extends Migration
             $table->string('team_email')->nullable();
             $table->string('lat')->nullable();
             $table->string('lng')->nullable();
+            $table->text('about_us_ar')->nullable();
+            $table->text('about_us_en')->nullable();
             $table->timestamps();
         });
     }

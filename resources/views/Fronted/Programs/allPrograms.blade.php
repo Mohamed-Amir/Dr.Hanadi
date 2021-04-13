@@ -30,9 +30,9 @@
 
                 <div class="col-md-3">
                     <div class="programs">
-                        <img src="images/Programs_images/{{$row->image}}" class="img-fluid">
-                        <h4>{{$row->program_name}}</h4>
-                        <p>{{substr($row->about_program,0,100)}}</p>
+                        <img src="/images/Programs_images/{{$row->image}}" class="img-fluid">
+                        <h4>{{$row->program_name_en}}</h4>
+                        <p>{{substr($row->about_program_en,0,100)}}</p>
 
                         <a href="{{route('Programs.singlePrograms',$row->id)}}" class="theme-btn">MORE DETAILS</a>
                     </div>

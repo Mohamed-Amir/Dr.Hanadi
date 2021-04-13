@@ -226,5 +226,7 @@ return [
 	'phoneUNique'=>'This phone is registered with another Client name',
 	'emailUNique'=>'This email is registered with another Client name',
 
+    //home
+    'WELCOME_TO'=>'WELCOME TO'
 
 ];

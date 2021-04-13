@@ -1,7 +1,7 @@
 @extends('Fronted.layouts.master')
 
 @section('title')
-    {{$program->program_name}}
+    {{$program->program_name_en}}
 @endsection
 
 @section('content')
@@ -9,7 +9,7 @@
         <div class="container">
             <div class="banner-inner">
                 <div class="banner-content">
-                    <h2 class="page-title">{{$program->program_name}}</h2>
+                    <h2 class="page-title">{{$program->program_name_en}}</h2>
                 </div>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
@@ -28,7 +28,7 @@
                 <div class="col-lg-5">
                     <div class="member-porfile mr-50 rmr-0 rmb-50">
                         <div class="porfile-image mb-40">
-                            <img src="images/Programs_images/{{$program->image}}" alt="Team Member">
+                            <img src="/images/Programs_images/{{$program->image}}" alt="Team Member">
                             <div class="experience">
                                 <h3>25+</h3>
                                 <h6>Subscriber</h6>
@@ -41,8 +41,8 @@
                 </div>
                 <div class="col-lg-7">
                     <div class="profile-details">
-                        <h3 class="profile-name">{{$program->program_name}}</h3>
-                        <p>{{$program->about_program}}</p>
+                        <h3 class="profile-name">{{$program->program_name_en}}</h3>
+                        <p>{{$program->about_program_en}}</p>
                     </div>
                 </div>
             </div>

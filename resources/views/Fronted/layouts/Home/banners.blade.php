@@ -6,7 +6,7 @@
                 <div class="beauty-content rmb-50 mr-25 rmr-0">
                     <h3>All kind of spa and beauty treatments for your body and soul.</h3>
                     <p>It has different attractions tropical rain, fog, dew, wall jets combined with sound caribbian</p>
-                    <a href="#" class="theme-btn style-two">More</a>
+                    <a href="{{route('Gallery.images')}}" class="theme-btn style-two">More</a>
                 </div>
             </div>
 

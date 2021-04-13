@@ -15,7 +15,7 @@
            @foreach($program as $row)
             <div class="team-item">
                 <img src="/images/Programs_images/{{$row->image}}" alt="Team Member">
-                <h5>{{$row->program_name}}</h5>
+                <h5>{{$row->program_name_en}}</h5>
                 <a href="{{route('Programs.singlePrograms',$row->id)}}">more info</a>
             </div>
             @endforeach

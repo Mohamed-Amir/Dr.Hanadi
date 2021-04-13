@@ -58,6 +58,40 @@
 <!-- Custom script -->
 <script src="/Fronted/js/script.js"></script>
 @yield('script')
+
+
+@include('Admin.includes.scripts.AlertHelper')
+
+    <script>
+        $('#NewsForm').submit(function (e) {
+            e.preventDefault();
+            $("#save").attr("disabled", true);
+
+            Toset('applying your request', 'info', 'processing your request ', false);
+            var formData = new FormData($('#NewsForm')[0]);
+            $.ajax({
+                url: '/News',
+                type: "post",
+                data: formData,
+                contentType: false,
+                processData: false,
+                success: function (data) {
+                    if (data.status == 1) {
+
+                        $("#save").attr("disabled", false);
+
+                        $.toast().reset('all');
+                        swal(data.message, {
+                            icon: "success",
+                        });
+                       $('#NewsForm')[0].reset();
+
+                        $("#save").attr("disabled", false);
+                    }
+                }
+            });
+        })
+    </script>
 </body>
 </html>
 

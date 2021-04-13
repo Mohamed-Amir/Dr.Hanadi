@@ -16,8 +16,11 @@ class CreateProgramsTable extends Migration
         Schema::create('programs', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('image')->nullable();
-            $table->string('program_name')->nullable();
-            $table->string('about_program')->nullable();
+            $table->string('program_name_ar')->nullable();
+            $table->string('program_name_en')->nullable();
+            $table->string('about_program_ar')->nullable();
+            $table->string('about_program_en')->nullable();
+            $table->tinyInteger('status')->nullable();
             $table->unsignedBigInteger('section_id')->nullable();
             $table->foreign('section_id')->references('id')->on('sections')->onDelete('cascade');
             $table->timestamps();

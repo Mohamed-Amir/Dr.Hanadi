@@ -14,7 +14,7 @@ $package=\App\Models\Sections::where('status',1)->get();
 
                 <div class="service-item ">
                     <a href="{{route('Sections.singleSection',$row->id)}}"><img src="/images/Sections/{{$row->icon}}"></a>
-                    <h4><a href="{{route('Sections.singleSection',$row->id)}}">{{$row->name}}</a></h4>
+                    <h4><a href="{{route('Sections.singleSection',$row->id)}}">{{$row->name_en}}</a></h4>
                 </div>
         </div>
             @endforeach

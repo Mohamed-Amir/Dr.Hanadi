@@ -84,7 +84,8 @@ class SectionsController extends Controller
      * @param $brand
      */
     public function save_section($request,$Sections){
-        $Sections->name=$request->name;
+        $Sections->name_ar=$request->name_ar;
+        $Sections->name_en=$request->name_en;
         $Sections->status=$request->status;
         if($request->icon) {
             deleteFile('Sections',$Sections->icon);

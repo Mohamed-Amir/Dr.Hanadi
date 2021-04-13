@@ -61,6 +61,20 @@
                             </div>
                         </div>
 
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="example-email"> عن الموقع بالانجليزيه</label>
+                                <textarea type="text" id="about_us_en" name="about_us_en"  class="form-control" ></textarea>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="example-email">بالعربيه عن الموقع </label>
+                                <textarea type="text" id="about_us_ar" name="about_us_ar"  class="form-control" ></textarea>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
                 <div id="err"></div>

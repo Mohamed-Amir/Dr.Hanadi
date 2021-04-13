@@ -116,6 +116,20 @@
                     </a>
                 </li>
 
+                <li class="sidebar-item">
+                    <a class="sidebar-link  waves-effect waves-dark" href="{{route('Gallery.index')}}" aria-expanded="false">
+                        <i class="fa fa-image"></i>
+                        <span class="hide-menu">معرض الصور</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-item">
+                    <a class="sidebar-link  waves-effect waves-dark" href="{{route('NewsLetter.index')}}" aria-expanded="false">
+                        <i class="fa fa-newspaper"></i>
+                        <span class="hide-menu">مشتركي الرسائل الاخباريه</span>
+                    </a>
+                </li>
+
 
             {{--                <li class="sidebar-item">--}}
 {{--                    <a class="sidebar-link  waves-effect waves-dark" href="{{route('Contact_us.index')}}" aria-expanded="false">--}}
