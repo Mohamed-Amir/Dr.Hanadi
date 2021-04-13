@@ -21,7 +21,8 @@ Route::group(['prefix' => LaravelLocalization::setLocale(),
 });
 
 Route::get('/', function () {
-    return view('home');
+    $current =1;
+    return view('home',compact('current'));
 });
 /** General pages */
 Route::get('/contacts', 'GeneralController@contacts')->name('General.contacts');
@@ -39,5 +40,5 @@ Route::post('/saveUser', 'UserController@saveUser')->name('User.saveUser');
 Route::get('/singleSection{id}', 'SectionsController@singleSection')->name('Sections.singleSection');
 
 /**Programs */
-Route::get('/singlePrograms{id}', 'ProgramsController@singleProgram')->name('Programs.singlePrograms');
+Route::get('/singlePrograms/{id}', 'ProgramsController@singleProgram')->name('Programs.singlePrograms');
 

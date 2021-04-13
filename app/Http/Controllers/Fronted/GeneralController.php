@@ -19,7 +19,8 @@ class GeneralController extends Controller
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function about_dr(){
-        return view('Fronted.DrHanadi.aboutDr');
+        $current=2;
+        return view('Fronted.DrHanadi.aboutDr',compact('current'));
     }
 
 
@@ -27,7 +28,8 @@ class GeneralController extends Controller
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function contacts(){
-        return view('Fronted.GeneralPages.contact_us');
+        $current=3;
+        return view('Fronted.GeneralPages.contact_us',compact('current'));
     }
 
     /**

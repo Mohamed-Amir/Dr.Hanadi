@@ -19,10 +19,10 @@ class ProgramsController extends Controller
 
     public function singleProgram($id)
     {
-        $videos = Program_videos::where('program_id',$id)->get();
         $program = Programs::where('id',$id)->first();
+        $singleProgram=1;
         if (!is_null($program)) {
-            return view('Fronted.Programs.singleProgram',compact('program','videos'));
+            return view('Fronted.Programs.singleProgram',compact('program','singleProgram'));
         }
     }
 }

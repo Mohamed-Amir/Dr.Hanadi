@@ -26,8 +26,8 @@ $sections = App\Models\Sections::where('status',1)->get();
 
                         <div class="navbar-collapse collapse clearfix">
                             <ul class="navigation clearfix">
-                                <li class="current"><a href="/">Home</a></li>
-                                <li><a href="{{route('General.about_dr')}}">About</a></li>
+                                <li @if(isset($current) AND $current ==1) class="current" @endif><a href="/">Home</a></li>
+                                <li @if(isset($current) AND $current ==2) class="current" @endif><a href="{{route('General.about_dr')}}">About</a></li>
                                 <li class="dropdown"><a href="#">Treatments Programs </a>
                                     <ul>
                                         @foreach($sections as $row)
@@ -35,12 +35,12 @@ $sections = App\Models\Sections::where('status',1)->get();
                                         @endforeach
                                     </ul>
                                 </li>
-                                <li><a href="{{route('General.contacts')}}">Contact</a></li>
+                                <li @if(isset($current) AND $current ==3) class="current" @endif><a href="{{route('General.contacts')}}">Contact</a></li>
                                 @if(Auth::check())
                                 <li><a href="login.html"><i class="far fa-book"></i> my profile </a></li>
                                 @else
-                                    <li><a href="{{route('User.sign_in')}}"><i class="far fa-user"></i> login </a></li>
-                                    <li><a href="{{route('User.sign_up')}}"><i class="far fa-user"></i> sign up </a></li>
+                                    <li @if(isset($current) AND $current ==4) class="current" @endif><a href="{{route('User.sign_in')}}"><i class="far fa-user"></i> login </a></li>
+                                    <li @if(isset($current) AND $current ==5) class="current" @endif><a href="{{route('User.sign_up')}}"><i class="far fa-user"></i> sign up </a></li>
                                 @endif
                             </ul>
                             <div class="dropdown">

@@ -1,7 +1,7 @@
 @extends('Fronted.layouts.master')
 
 @section('title')
-    programs
+    {{$program->program_name}}
 @endsection
 
 @section('content')
@@ -48,7 +48,7 @@
             </div>
         </div>
     </section>
-
+    @if($program->videos->count() > 0)
     <section class="video-section pt-100  pb-150  rpt-95 ">
         <div class="container">
 
@@ -57,7 +57,7 @@
                 <p>Doctor of experience in cosmetic and dermatology</p>
             </div>
             <div class="row align-items-center">
-                @foreach($videos as $row)
+                @foreach($program->videos as $row)
                 <div class="col-md-3">
                     <div class="video-frame">
                         <div class="video-container">
@@ -69,6 +69,7 @@
             </div>
         </div>
     </section>
+    @endif
 
     <div class="comments">
         <div class="contact-form">
@@ -106,47 +107,7 @@
         </div></div>
 
 
-    <section class="team-section pt-95 pb-150 rpt-70 rpb-100">
-        <div class="container">
-            <div class="team-carousel owl-carousel">
-                <div class="team-item">
-                    <img src="assets/images/team/team1.png" alt="">
-                    <h5>Program name</h5>
-
-                </div>
-                <div class="team-item">
-                    <img src="assets/images/team/team2.png" alt="">
-                    <h5>Program name</h5>
-                </div>
-                <div class="team-item">
-                    <img src="assets/images/team/team3.png" alt="">
-                    <h5>Program name</h5>
-                </div>
-                <div class="team-item">
-                    <img src="assets/images/team/team4.png" alt="">
-                    <h5>Program name</h5>
-                </div>
-                <div class="team-item">
-                    <img src="assets/images/team/team1.png" alt="">
-                    <h5>Program name</h5>
-                </div>
-                <div class="team-item">
-                    <img src="assets/images/team/team2.png" alt="">
-                    <h5>Program name</h5>
-
-                </div>
-                <div class="team-item">
-                    <img src="assets/images/team/team3.png" alt="">
-                    <h5>Program name</h5>
-                </div>
-                <div class="team-item">
-                    <img src="assets/images/team/team4.png" alt="">
-                    <h5>Program name</h5>
-                </div>
-            </div>
-
-        </div>
-    </section>
+    @include('Fronted.Programs.homePrograms')
 
 
 @endsection
