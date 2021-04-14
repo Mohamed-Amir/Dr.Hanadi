@@ -31,6 +31,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link href="/Admin/toast/jquery.toast.css" rel="stylesheet"/>
 </head>
 <body>
 
@@ -70,23 +71,23 @@
             Toset('applying your request', 'info', 'processing your request ', false);
             var formData = new FormData($('#NewsForm')[0]);
             $.ajax({
-                url: '/News',
+                url: '/api/News',
                 type: "post",
                 data: formData,
                 contentType: false,
                 processData: false,
                 success: function (data) {
+                    $("#save").attr("disabled", false);
+                    $.toast().reset('all');
                     if (data.status == 1) {
-
-                        $("#save").attr("disabled", false);
-
-                        $.toast().reset('all');
                         swal(data.message, {
                             icon: "success",
                         });
                        $('#NewsForm')[0].reset();
-
-                        $("#save").attr("disabled", false);
+                    }else {
+                        swal(data.message, {
+                            icon: "error",
+                        });
                     }
                 }
             });

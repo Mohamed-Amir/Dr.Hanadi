@@ -227,6 +227,7 @@ return [
 	'emailUNique'=>'This email is registered with another Client name',
 
     //home
-    'WELCOME_TO'=>'WELCOME TO'
+    'WELCOME_TO'=>'WELCOME TO',
+    'login'=>'sign in'
 
 ];

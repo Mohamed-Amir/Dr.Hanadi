@@ -61,7 +61,7 @@
                 <div class="col-md-3">
                     <div class="video-frame">
                         <div class="video-container">
-                            <iframe src="/images/Program_videos/{{$row->video}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                            <iframe src="/images/Program_videos/{{$row->video}}" frameborder="0" allow="accelerometer;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
                         </div>
                     </div>
                 </div>

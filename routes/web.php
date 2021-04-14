@@ -13,12 +13,13 @@
 
 
 Auth::routes();
+
 Route::group(['prefix' => LaravelLocalization::setLocale(),
 
     'middleware' => ['localeSessionRedirect', 'localizationRedirect', 'localeViewPath']], function () {
 
 
-});
+
 
 Route::get('/', function () {
     $current =1;
@@ -28,7 +29,6 @@ Route::get('/', function () {
 Route::get('/contacts', 'GeneralController@contacts')->name('General.contacts');
 Route::get('/about_dr', 'GeneralController@about_dr')->name('General.about_dr');
 Route::post('/contact_us', 'GeneralController@contact_us')->name('General.contact_us');
-Route::post('/News', 'GeneralController@News')->name('letter.News');
 
 
 /** User */
@@ -47,3 +47,4 @@ Route::get('/singlePrograms/{id}', 'ProgramsController@singleProgram')->name('Pr
 /**Gallery */
 Route::get('/Gallery', 'GeneralController@Gallery')->name('Gallery.images');
 
+});

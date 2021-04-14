@@ -23,7 +23,7 @@ $service = App\Models\Sections::get();
                             <h4 class="footer-title">Our Services.</h4>
                             <ul class="list-style-one">
                                 @foreach($service as $row)
-                                <li><a href="{{route('Sections.singleSection',$row->id)}}">{{$row->name}}</a></li>
+                                <li><a href="{{route('Sections.singleSection',$row->id)}}">{{ getLang() =='ar' ? $row->name_ar : $row->name_en}}</a></li>
                                     @endforeach
                             </ul>
                         </div>
