@@ -5,29 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b764f994-3450-4899-9ddd-f0bf58414927" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/DrHanadi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Masseges.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Program_videos.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Programs.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Testimonial.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/Admin/Contact_us/form.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/Admin/Contact_us/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/Admin/Contact_us/script.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/Fronted/DrHanadi/latestVideo.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Wafaa/app/Models/Contacts.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Wafaa/app/Models/Packages.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Wafaa/resources/views/Fronted/Packages/allPackages.blade.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../compound/app/Http/Controllers/Admin/CompoundController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../compound/app/Http/Controllers/Admin/CompoundController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../compound/app/Models/Villas.php" beforeDir="false" afterPath="$PROJECT_DIR$/../compound/app/Models/Villas.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Fronted/GeneralController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Fronted/GeneralController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Fronted/ProgramsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Fronted/ProgramsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Fronted/Programs/homePrograms.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Fronted/Programs/homePrograms.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Fronted/Programs/singleProgram.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Fronted/Programs/singleProgram.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/ar/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/main.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/Fronted/layouts/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Fronted/layouts/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../wfaa-main/wfaa-main/.env" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../wfaa-main/wfaa-main/.idea/Laravel.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../wfaa-main/wfaa-main/.idea/misc.xml" beforeDir="false" />
@@ -13881,50 +13867,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/Fronted/Programs/homePrograms.blade.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/Fronted/layouts/header.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="53" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="53" />
+            <state relative-caret-position="289">
+              <caret line="29" column="142" selection-start-line="29" selection-start-column="137" selection-end-line="29" selection-end-column="142" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/web.php">
+        <entry file="file://$PROJECT_DIR$/resources/lang/en/main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Fronted/GeneralController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/Fronted/Programs/singleProgram.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="986">
-              <caret line="110" selection-start-line="110" selection-end-line="110" />
-              <folding>
-                <element signature="e#1857#2732#0#HTML" />
-                <element signature="e#2738#4447#0#HTML" />
-              </folding>
+            <state relative-caret-position="309">
+              <caret line="229" column="21" lean-forward="true" selection-start-line="229" selection-start-column="21" selection-end-line="229" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/Fronted/layouts/header.blade.php">
+        <entry file="file://$PROJECT_DIR$/resources/lang/ar/main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="37" column="97" lean-forward="true" selection-start-line="37" selection-start-column="97" selection-end-line="37" selection-end-column="97" />
+            <state relative-caret-position="326">
+              <caret line="234" lean-forward="true" selection-start-line="234" selection-end-line="234" />
             </state>
           </provider>
         </entry>
@@ -13951,6 +13915,8 @@
       <find>About_dr</find>
       <find>asse</find>
       <find>Sections</find>
+      <find>Home</find>
+      <find>About</find>
     </findStrings>
     <replaceStrings>
       <replace>Program_videos</replace>
@@ -13971,8 +13937,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/views/Fronted/DrHanadi/aboutDr.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/Fronted/GeneralPages/contacts.blade.php" />
         <option value="$PROJECT_DIR$/app/Models/Contact_Masseges.php" />
         <option value="$PROJECT_DIR$/../wfaa-main/resources/views/Fronted/GeneralPages/contacts.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2021_04_12_124805_create_contact__masseges_table.php" />
@@ -14022,6 +13986,8 @@
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Fronted/GeneralController.php" />
         <option value="$PROJECT_DIR$/resources/views/Fronted/layouts/header.blade.php" />
+        <option value="$PROJECT_DIR$/resources/lang/en/main.php" />
+        <option value="$PROJECT_DIR$/resources/lang/ar/main.php" />
       </list>
     </option>
   </component>
@@ -14200,39 +14166,27 @@
             <path>
               <item name="dr.Hanadi" type="b2602c69:ProjectViewProjectNode" />
               <item name="dr.Hanadi" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dr.Hanadi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dr.Hanadi" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dr.Hanadi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dr.Hanadi" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="Fronted" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dr.Hanadi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dr.Hanadi" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dr.Hanadi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dr.Hanadi" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dr.Hanadi" type="b2602c69:ProjectViewProjectNode" />
               <item name="dr.Hanadi" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="lang" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dr.Hanadi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dr.Hanadi" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="lang" type="462c0819:PsiDirectoryNode" />
+              <item name="ar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dr.Hanadi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dr.Hanadi" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="lang" type="462c0819:PsiDirectoryNode" />
+              <item name="en" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -14299,12 +14253,12 @@
       <workItem from="1617828396092" duration="17000" />
       <workItem from="1618137160216" duration="15001000" />
       <workItem from="1618225667610" duration="28635000" />
-      <workItem from="1618334804465" duration="1123000" />
+      <workItem from="1618334804465" duration="3024000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59040000" />
+    <option name="totallyTimeSpent" value="60941000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1192" height="640" extended-state="6" />
@@ -14336,24 +14290,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/DrHanadiController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-          <folding>
-            <element signature="e#47#75#0#PHP" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#button#0;n#td#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/Admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="87" column="22" selection-start-line="87" selection-start-column="22" selection-end-line="87" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/Admin/DrHanadi/form.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="241">
@@ -14717,8 +14653,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/Fronted/layouts/header.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="37" column="97" lean-forward="true" selection-start-line="37" selection-start-column="97" selection-end-line="37" selection-end-column="97" />
+        <state relative-caret-position="289">
+          <caret line="29" column="142" selection-start-line="29" selection-start-column="137" selection-end-line="29" selection-end-column="142" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/lang/en/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="229" column="21" lean-forward="true" selection-start-line="229" selection-start-column="21" selection-end-line="229" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/lang/ar/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="234" lean-forward="true" selection-start-line="234" selection-end-line="234" />
         </state>
       </provider>
     </entry>

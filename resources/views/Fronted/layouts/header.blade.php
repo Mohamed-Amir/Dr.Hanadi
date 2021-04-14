@@ -26,7 +26,7 @@ $sections = App\Models\Sections::where('status',1)->get();
 
                         <div class="navbar-collapse collapse clearfix">
                             <ul class="navigation clearfix">
-                                <li @if(isset($current) AND $current ==1) class="current" @endif><a href="/">Home</a></li>
+                                <li @if(isset($current) AND $current ==1) class="current" @endif><a href="/">{{trans('main.Home')}}</a></li>
                                 <li @if(isset($current) AND $current ==2) class="current" @endif><a href="{{route('General.about_dr')}}">About</a></li>
                                 <li class="dropdown"><a href="#">Treatments Programs </a>
                                     <ul>
