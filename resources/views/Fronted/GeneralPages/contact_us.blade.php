@@ -73,31 +73,31 @@
                     <div class="row clearfix">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input type="text" name="name" id="first_name" class="form-control" value="" required="" placeholder="Name Here">
+                                <input type="text" name="name" id="first_name" class="form-control" value="" required="" placeholder="{{trans('hanadi.Name_Here')}}">
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input type="email" name="email" id="email" class="form-control" value="" required="" placeholder="Email Here">
+                                <input type="email" name="email" id="email" class="form-control" value="" required="" placeholder="{{trans('hanadi.Email')}}">
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input type="tel" name="phone" id="phone-no" class="form-control" value="" required="" placeholder="Phone No.">
+                                <input type="tel" name="phone" id="phone-no" class="form-control" value="" required="" placeholder="{{trans('hanadi.Phone_Number')}}">
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input type="text" name="subject" id="subject" class="form-control" value="" required="" placeholder="Subject">
+                                <input type="text" name="subject" id="subject" class="form-control" value="" required="" placeholder="{{trans('hanadi.Subject')}}">
                             </div>
                         </div>
                         <div class="col-md-12">
                             <div class="form-group mb-60">
-                                <textarea name="massage" id="massage" class="form-control" rows="7" required="" placeholder="Message"></textarea>
+                                <textarea name="massage" id="massage" class="form-control" rows="7" required="" placeholder="{{trans('hanadi.Message')}}"></textarea>
                             </div>
                         </div>
                         <div class="col-md-12 text-center">
-                            <button id="save" type="submit" class="theme-btn style-two" >Send Now</button>
+                            <button id="save" type="submit" class="theme-btn style-two" >{{trans('hanadi.Send_Now')}}</button>
                         </div>
                     </div>
                 </form>

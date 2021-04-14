@@ -27,7 +27,7 @@
         <div class="container">
             @foreach($program as $row)
             <div class="row align-items-center">
-                @if(getlang()=='en')
+                @if(getLang()=='en')
                 <div class="col-md-3">
                     <div class="programs">
                         <img src="/images/Programs_images/{{$row->image}}" class="img-fluid">

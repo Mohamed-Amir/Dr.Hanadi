@@ -10,7 +10,7 @@ $service = App\Models\Sections::get();
                         <div class="widget about-widget mr-30 rmr-0">
                             <h4 class="footer-title">{{trans('hanadi.About_Us')}}</h4>
                             <div class="about-widget-content">
-                                @if(get_lang() =='en')
+                                @if(getLang() =='en')
                                 <p>{{about()->about_us_en}}</p>
                                 @else
                                     <p>{{about()->about_us_ar}}</p>
@@ -27,7 +27,7 @@ $service = App\Models\Sections::get();
                             <h4 class="footer-title">{{trans('hanadi.Our_Services')}}</h4>
                             <ul class="list-style-one">
                                 @foreach($service as $row)
-                                <li><a href="{{route('Sections.singleSection',$row->id)}}">{{$row->name}}</a></li>
+                                <li><a href="{{route('Sections.singleSection',$row->id)}}">{{ getLang() =='ar' ? $row->name_ar : $row->name_en}}</a></li>
                                     @endforeach
                             </ul>
                         </div>

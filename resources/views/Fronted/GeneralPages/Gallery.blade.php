@@ -35,7 +35,7 @@
                         <img src="/images/Gallery/{{$row->image}}" class="img-fluid" alt="">
                         <div class="gallery-hover">
                             <a class="gallery-popup-link" href="/images/Gallery/{{$row->image}}"><i class="fas fa-link"></i></a>
-                            @if(get_lang() =='en')
+                            @if(getLang() =='en')
                             <h4>{{$row->title_en}}</h4>
                                 @else
                                 <h4>{{$row->title_ar}}</h4>

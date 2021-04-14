@@ -9,7 +9,7 @@ $package=\App\Models\Sections::where('status',1)->get();
         <div class="row">
             <div class="col-lg-1 col-md-6"></div>
             @foreach($package as $row)
-                @if(getlang() =='en')
+                @if(getLang() =='en')
             <div class="col-lg-2 col-md-6">
                 <div class="service-item ">
                     <a href="{{route('Sections.singleSection',$row->id)}}"><img src="/images/Sections/{{$row->icon}}"></a>

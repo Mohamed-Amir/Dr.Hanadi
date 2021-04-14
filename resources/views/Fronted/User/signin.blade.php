@@ -29,19 +29,19 @@
                     <div class="container">
                         <div class="contact-form-inner">
                             <div class="section-title text-center mb-95">
-                                <h2>Login</h2>
+                                <h2>{{trans('hanadi.login')}}</h2>
                             </div>
                             <form id="sign_inForm" action="{{url('User.sign_in')}}" method="post">
                                 @csrf
                                 <div class="row clearfix">
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <input type="text" name="email" id="email" class="form-control" value="" required="" placeholder="{{trans('handi.Email')}}">
+                                            <input type="text" name="email" id="email" class="form-control" value="" required="" placeholder="{{trans('hanadi.Email')}}">
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <input type="password" name="password" id="password" class="form-control" value="" required="" placeholder="{{trans('handi.password')}}">
+                                            <input type="password" name="password" id="password" class="form-control" value="" required="" placeholder="{{trans('hanadi.password')}}">
                                         </div>
                                     </div>
 

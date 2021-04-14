@@ -32,11 +32,16 @@ class GeneralController extends Controller
     }
 
     public function News(Request $request){
+        $News=NewsLetter::where('email',$request->email)->first();
+        if(!is_null($News)){
+            $msg=getLang() =='ar' ? 'البريد مسجل لدينا بالفعل' : 'this email is already taken';
+            return response()->json(['status'=>0,'message'=>$msg]);
+        }
         $News = new NewsLetter();
         $News->email=$request->email;
         $News->save();
-
-        return response()->json(['status'=>1,'message'=>'Thank you']);
+        $msg=getLang() =='ar' ? 'شكرا لك' : 'Thank you';
+        return response()->json(['status'=>1,'message'=>$msg]);
     }
 
     /**

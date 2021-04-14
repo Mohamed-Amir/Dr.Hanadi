@@ -226,6 +226,7 @@ return [
 	'phoneUNique'=>'This phone is registered with another Client name',
 	'emailUNique'=>'This email is registered with another Client name',
 
+<<<<<<< HEAD
 
 //hanadi
     'About'=>'About',
@@ -236,5 +237,10 @@ return [
     'my_profile'=>'my profile',
     'Dr_Hanadi_yousif'=>'Dr.Hanadi yousif',
     'About_the_life_of_Dr_Hanadi'=>'About the life of Dr.Hanadi',
+=======
+    //home
+    'WELCOME_TO'=>'WELCOME TO',
+    'login'=>'sign in'
+>>>>>>> 165003f8d6d33f82a5d267615da2e7c2fe4433a8
 
 ];

@@ -14,7 +14,7 @@
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="/">{{trans('main.home')}}</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">{{trans('handi.Dr_Hanadi_yousif')}}</li>
+                        <li class="breadcrumb-item active" aria-current="page">{{trans('hanadi.Dr_Hanadi_yousif')}}</li>
                     </ol>
                 </nav>
             </div>
