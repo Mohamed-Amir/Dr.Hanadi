@@ -89,8 +89,10 @@ class ProgramsController extends Controller
      * @param $brand
      */
     public function save_program($request,$Programs){
-        $Programs->program_name=$request->program_name;
-        $Programs->about_program=$request->about_program;
+        $Programs->program_name_ar=$request->program_name_ar;
+        $Programs->program_name_en=$request->program_name_en;
+        $Programs->about_program_ar=$request->about_program_ar;
+        $Programs->about_program_en=$request->about_program_en;
         $Programs->section_id=$request->section_id;
         $Programs->status=$request->status;
         if($request->image) {

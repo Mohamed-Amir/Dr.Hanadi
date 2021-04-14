@@ -12,21 +12,28 @@
                 <div class="modal-body">
                     <div class="row">
 
-                        <div class="col-md-4">
+                        <div class="col-md-6">
                             <div class="form-group">
-                                <label for="example-email"> اسم القسم </label>
-                                <input type="text" id="name" name="name"  class="form-control"   >
+                                <label for="example-email"> اسم القسم بالعربيه</label>
+                                <input type="text" id="name_ar" name="name_ar"  class="form-control"   >
                             </div>
                         </div>
 
-                        <div class="col-md-4">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="example-email"> اسم القسم بالانجليزيه</label>
+                                <input type="text" id="name_en" name="name_en"  class="form-control"   >
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
                             <div class="form-group">
                                 <label for="example-email">شعار القسم</label>
                                 <input type="file" id="icon" name="icon"  class="form-control"   >
                             </div>
                         </div>
 
-                        <div class="col-md-4">
+                        <div class="col-md-6">
                             <div class="form-group">
                                 <label for="example-email">عرض في الرئيسية</label>
                                 <select  id="status" name="status"  class="form-control"   >

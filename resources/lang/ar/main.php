@@ -230,7 +230,13 @@ return [
 	'phoneUNique'=>'رقم الهاتف مسجل باسم عميل اخر',
 	'emailUNique'=>'البريد الالكتروني مسجل باسم عميل اخر',
 
-//home
+    //home
+    'WELCOME_TO'=>'اهلا بك في',
     'About'=>'عن الموقع',
-
+    'Contact'=>'تواصل معنا',
+    'login'=>'تسجيل الدخول',
+    'sign_up'=>'حساب جديد',
+    'my_profile'=>'حسابي',
+    'Dr_Hanadi_yousif'=>'الدكتوره هنادي يوسف',
+    'About_the_life_of_Dr_Hanadi'=>'عن حياه الدكتوره هنادي',
 ];

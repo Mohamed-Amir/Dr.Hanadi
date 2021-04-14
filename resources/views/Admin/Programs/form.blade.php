@@ -12,21 +12,28 @@
                 <div class="modal-body">
                     <div class="row">
 
-                        <div class="col-md-4">
+                        <div class="col-md-6">
                             <div class="form-group">
-                                <label for="example-email"> اسم البرنامج </label>
-                                <input type="text" id="program_name" name="program_name"  class="form-control"   >
+                                <label for="example-email"> اسم البرنامج بالعربيه</label>
+                                <input type="text" id="program_name_ar" name="program_name_ar"  class="form-control"   >
                             </div>
                         </div>
 
-                        <div class="col-md-4">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="example-email"> اسم البرنامج بالانجليزيه</label>
+                                <input type="text" id="program_name_en" name="program_name_en"  class="form-control"   >
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
                             <div class="form-group">
                                 <label for="example-email">صوره</label>
                                 <input type="file" id="image" name="image"  class="form-control"   >
                             </div>
                         </div>
 
-                        <div class="col-md-4">
+                        <div class="col-md-6">
                             <div class="form-group">
                                 <label for="example-email">عرض في الرئيسية</label>
                                 <select  id="status" name="status"  class="form-control"   >
@@ -38,8 +45,15 @@
 
                         <div class="col-md-12">
                             <div class="form-group">
-                                <label for="example-email">عن البرنامج</label>
-                                <textarea type="text" id="about_program" name="about_program"  class="form-control"></textarea>
+                                <label for="example-email">عن البرنامج بالعربيه</label>
+                                <textarea type="text" id="about_program_ar" name="about_program_ar"  class="form-control"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="example-email">عن البرنامج بالانجليزيه</label>
+                                <textarea type="text" id="about_program_en" name="about_program_en"  class="form-control"></textarea>
                             </div>
                         </div>
 

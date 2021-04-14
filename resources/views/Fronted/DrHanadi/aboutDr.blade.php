@@ -1,7 +1,7 @@
 @extends('Fronted.layouts.master')
 
 @section('title')
-    Dr.Hanadi yousif
+    {{trans('handi.Dr_Hanadi_yousif')}}
 @endsection
 
 @section('content')
@@ -9,12 +9,12 @@
         <div class="container">
             <div class="banner-inner">
                 <div class="banner-content">
-                    <h2 class="page-title">About me</h2>
+                    <h2 class="page-title">{{trans('handi.Dr_Hanadi_yousif')}}</h2>
                 </div>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="/">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">About Me</li>
+                        <li class="breadcrumb-item"><a href="/">{{trans('main.home')}}</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">{{trans('handi.Dr_Hanadi_yousif')}}</li>
                     </ol>
                 </nav>
             </div>

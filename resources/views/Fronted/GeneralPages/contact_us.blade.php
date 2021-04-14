@@ -1,7 +1,7 @@
 @extends('Fronted.layouts.master')
 
 @section('title')
-    Contact Us
+    {{trans('hanadi.Contact')}}
 @endsection
 
 @section('content')
@@ -10,12 +10,12 @@
         <div class="container">
             <div class="banner-inner">
                 <div class="banner-content">
-                    <h2 class="page-title">Contact Us.</h2>
+                    <h2 class="page-title">{{trans('hanadi.Contact')}}</h2>
                 </div>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="/">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
+                        <li class="breadcrumb-item"><a href="/">{{trans('main.home')}}</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">{{trans('hanadi.Contact')}}</li>
                     </ol>
                 </nav>
             </div>
@@ -66,7 +66,7 @@
         <div class="container">
             <div class="contact-form-inner">
                 <div class="section-title text-center mb-95">
-                    <h2>Get In Touch</h2>
+                    <h2>{{trans('hanadi.Get_In_Touch')}}</h2>
                 </div>
                 <form id='contactform' action="{{route('General.contacts')}}" name="contactform">
                     @csrf

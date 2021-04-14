@@ -93,6 +93,23 @@ Route::prefix('Admin')->group(function () {
             Route::post('/update', 'DrHanadiController@update')->name('DrHanadi.update');
 
         });
+
+        /** Gallery */
+        Route::prefix('Gallery')->group(function () {
+            Route::get('/index', 'GalleryController@index')->name('Gallery.index');
+            Route::get('/allData', 'GalleryController@allData')->name('Gallery.allData');
+            Route::post('/create', 'GalleryController@create')->name('Gallery.create');
+            Route::get('/edit/{id}', 'GalleryController@edit')->name('Gallery.edit');
+            Route::post('/update', 'GalleryController@update')->name('Gallery.update');
+            Route::get('/destroy/{id}', 'GalleryController@destroy')->name('Gallery.destroy');
+        });
+
+        /** NewsLetter */
+        Route::prefix('NewsLetter')->group(function () {
+            Route::get('/index', 'NewsLetterController@index')->name('NewsLetter.index');
+            Route::get('/allData', 'NewsLetterController@allData')->name('NewsLetter.allData');
+            Route::get('/destroy/{id}', 'NewsLetterController@destroy')->name('NewsLetter.destroy');
     });
+});
 });
 

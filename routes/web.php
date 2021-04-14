@@ -28,6 +28,8 @@ Route::get('/', function () {
 Route::get('/contacts', 'GeneralController@contacts')->name('General.contacts');
 Route::get('/about_dr', 'GeneralController@about_dr')->name('General.about_dr');
 Route::post('/contact_us', 'GeneralController@contact_us')->name('General.contact_us');
+Route::post('/News', 'GeneralController@News')->name('letter.News');
+
 
 /** User */
 Route::get('/sign_in', 'UserController@sign_in')->name('User.sign_in');
@@ -37,8 +39,11 @@ Route::get('/sign_up', 'UserController@sign_up')->name('User.sign_up');
 Route::post('/saveUser', 'UserController@saveUser')->name('User.saveUser');
 
 /** Sections */
-Route::get('/singleSection{id}', 'SectionsController@singleSection')->name('Sections.singleSection');
+Route::get('/singleSection/{id}', 'SectionsController@singleSection')->name('Sections.singleSection');
 
 /**Programs */
 Route::get('/singlePrograms/{id}', 'ProgramsController@singleProgram')->name('Programs.singlePrograms');
+
+/**Gallery */
+Route::get('/Gallery', 'GeneralController@Gallery')->name('Gallery.images');
 

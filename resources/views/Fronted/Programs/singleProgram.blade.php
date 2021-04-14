@@ -1,7 +1,11 @@
 @extends('Fronted.layouts.master')
 
 @section('title')
-    {{$program->program_name}}
+    @if(getlang() =='en')
+    {{$program->program_name_en}}
+    @else
+        {{$program->program_name_ar}}
+    @endif
 @endsection
 
 @section('content')
@@ -9,12 +13,16 @@
         <div class="container">
             <div class="banner-inner">
                 <div class="banner-content">
-                    <h2 class="page-title">{{$program->program_name}}</h2>
+                    <h2 class="page-title"> @if(getlang() =='en')
+                            {{$program->program_name_en}}
+                        @else
+                            {{$program->program_name_ar}}
+                        @endif</h2>
                 </div>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="/">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">program</li>
+                        <li class="breadcrumb-item"><a href="/">{{trans('main.home')}}</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">{{trans('hanadi.programs')}}</li>
                     </ol>
                 </nav>
             </div>
@@ -28,24 +36,34 @@
                 <div class="col-lg-5">
                     <div class="member-porfile mr-50 rmr-0 rmb-50">
                         <div class="porfile-image mb-40">
-                            <img src="images/Programs_images/{{$program->image}}" alt="Team Member">
+                            <img src="/images/Programs_images/{{$program->image}}" alt="Team Member">
                             <div class="experience">
                                 <h3>25+</h3>
                                 <h6>Subscriber</h6>
                             </div>
                         </div>
                         <div class="download-bio">
-                            <a href="#"><i class="far fa-file-word"></i> BUY NOW</a>
+                            <a href="#"><i class="far fa-file-word"></i>{{trans('hanadi.BUY_NOW')}}</a>
                         </div>
                     </div>
                 </div>
+                @if(getlang() =='en')
                 <div class="col-lg-7">
                     <div class="profile-details">
-                        <h3 class="profile-name">{{$program->program_name}}</h3>
-                        <p>{{$program->about_program}}</p>
+                        <h3 class="profile-name">{{$program->program_name_en}}</h3>
+                        <p>{{$program->about_program_en}}</p>
                     </div>
                 </div>
             </div>
+            @else
+                <div class="col-lg-7">
+                    <div class="profile-details">
+                        <h3 class="profile-name">{{$program->program_name_ar}}</h3>
+                        <p>{{$program->about_program_ar}}</p>
+                    </div>
+                </div>
+                @endif
+        </div>
         </div>
     </section>
     @if($program->videos->count() > 0)
@@ -53,15 +71,14 @@
         <div class="container">
 
             <div class="section-title text-center mb-50">
-                <h2>Explanatory videos</h2>
-                <p>Doctor of experience in cosmetic and dermatology</p>
+                <h2>{{trans('hanadi.Explanatory_videos')}}</h2>
             </div>
             <div class="row align-items-center">
                 @foreach($program->videos as $row)
                 <div class="col-md-3">
                     <div class="video-frame">
                         <div class="video-container">
-                            <iframe src="/images/Program_videos/{{$row->video}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                            <iframe src="/images/Program_videos/{{$row->video}}" frameborder="0" allow="accelerometer;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
                         </div>
                     </div>
                 </div>

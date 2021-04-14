@@ -28,7 +28,8 @@
         columns: [
             {data: 'checkBox', name: 'checkBox'},
             {data: 'id', name: 'id'},
-            {data: 'program_name', name: 'program_name'},
+            {data: 'program_name_ar', name: 'program_name_ar'},
+            {data: 'program_name_en', name: 'program_name_en'},
             {data: 'image', name: 'image'},
             {data: 'status', name: 'status'},
             {data: 'action', name: 'action', orderable: false, searchable: false},
@@ -66,8 +67,10 @@
 
                 $('#formModel').modal();
 
-                $('#program_name').val(data.program_name);
-                $('#about_program').val(data.about_program);
+                $('#program_name_ar').val(data.program_name_ar);
+                $('#program_name_en').val(data.program_name_en);
+                $('#about_program_ar').val(data.about_program_ar);
+                $('#about_program_en').val(data.about_program_en);
                 $('#section_id').val(data.section_id);
                 $('#id').val(data.id);
             }

@@ -1,7 +1,7 @@
 @extends('Fronted.layouts.master')
 
 @section('title')
-    Sign in
+    {{trans('hanadi.login')}}
 @endsection
 
 @section('content')
@@ -9,12 +9,12 @@
         <div class="container">
             <div class="banner-inner">
                 <div class="banner-content">
-                    <h2 class="page-title">login</h2>
+                    <h2 class="page-title">{{trans('hanadi.login')}}</h2>
                 </div>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="/">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">login</li>
+                        <li class="breadcrumb-item"><a href="/">{{trans('main.home')}}</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">{{trans('hanadi.login')}}</li>
                     </ol>
                 </nav>
             </div>
@@ -36,18 +36,18 @@
                                 <div class="row clearfix">
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <input type="text" name="email" id="email" class="form-control" value="" required="" placeholder="Email">
+                                            <input type="text" name="email" id="email" class="form-control" value="" required="" placeholder="{{trans('handi.Email')}}">
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <input type="password" name="password" id="password" class="form-control" value="" required="" placeholder="password">
+                                            <input type="password" name="password" id="password" class="form-control" value="" required="" placeholder="{{trans('handi.password')}}">
                                         </div>
                                     </div>
 
 
                                     <div class="col-md-12 text-center">
-                                        <button id="save" type="submit" class="theme-btn style-two">login</button>
+                                        <button id="save" type="submit" class="theme-btn style-two">{{trans('hanadi.login')}}</button>
                                     </div>
                                 </div>
                             </form>

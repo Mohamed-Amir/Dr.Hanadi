@@ -5,7 +5,7 @@
             <div class="col-lg-8">
                 <div class="about-content">
                     <div class="section-title">
-                        <h2>About the life of Dr. Hanadi</h2>
+                        <h2>{{trans('hanadi.About_the_life_of_Dr_Hanadi')}}</h2>
                         <p>{{dr()->about}}</p>
                     </div>
 

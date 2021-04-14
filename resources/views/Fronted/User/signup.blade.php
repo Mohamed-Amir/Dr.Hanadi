@@ -1,7 +1,7 @@
 @extends('Fronted.layouts.master')
 
 @section('title')
-    Sign up
+    {{trans('hanadi.sign_up')}}
 @endsection
 
 @section('content')

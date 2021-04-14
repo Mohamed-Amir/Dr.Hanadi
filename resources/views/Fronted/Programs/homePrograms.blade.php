@@ -13,11 +13,19 @@
     <div class="container">
         <div class="team-carousel owl-carousel">
            @foreach($program as $row)
+               @if(getlang() =='en')
             <div class="team-item">
                 <img src="/images/Programs_images/{{$row->image}}" alt="Team Member">
-                <h5>{{$row->program_name}}</h5>
-                <a href="{{route('Programs.singlePrograms',$row->id)}}">more info</a>
+                <h5>{{$row->program_name_en}}</h5>
+                <a href="{{route('Programs.singlePrograms',$row->id)}}">{{trans('hanadi.MORE_DETAILS')}}</a>
             </div>
+                @else
+                    <div class="team-item">
+                        <img src="/images/Programs_images/{{$row->image}}" alt="Team Member">
+                        <h5>{{$row->program_name_ar}}</h5>
+                        <a href="{{route('Programs.singlePrograms',$row->id)}}">{{trans('hanadi.MORE_DETAILS')}}</a>
+                    </div>
+                @endif
             @endforeach
 
         </div>

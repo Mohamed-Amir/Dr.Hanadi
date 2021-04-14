@@ -35,12 +35,12 @@ $sections = App\Models\Sections::where('status',1)->get();
                                         @endforeach
                                     </ul>
                                 </li>
-                                <li @if(isset($current) AND $current ==3) class="current" @endif><a href="{{route('General.contacts')}}">Contact</a></li>
+                                <li @if(isset($current) AND $current ==3) class="current" @endif><a href="{{route('General.contacts')}}">{{trans('handi.Contact')}}</a></li>
                                 @if(Auth::check())
-                                <li><a href="login.html"><i class="far fa-book"></i> my profile </a></li>
+                                <li><a href="login.html"><i class="far fa-book"></i> my_profile{{trans('handi.my_profile')}} </a></li>
                                 @else
-                                    <li @if(isset($current) AND $current ==4) class="current" @endif><a href="{{route('User.sign_in')}}"><i class="far fa-user"></i> login </a></li>
-                                    <li @if(isset($current) AND $current ==5) class="current" @endif><a href="{{route('User.sign_up')}}"><i class="far fa-user"></i> sign up </a></li>
+                                    <li @if(isset($current) AND $current ==4) class="current" @endif><a href="{{route('User.sign_in')}}"><i class="far fa-user"></i>{{trans('handi.login')}}</a></li>
+                                    <li @if(isset($current) AND $current ==5) class="current" @endif><a href="{{route('User.sign_up')}}"><i class="far fa-user"></i>{{trans('handi.sign_up')}}</a></li>
                                 @endif
                             </ul>
                             <div class="dropdown">

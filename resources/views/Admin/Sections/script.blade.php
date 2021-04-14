@@ -28,7 +28,8 @@
         columns: [
             {data: 'checkBox', name: 'checkBox'},
             {data: 'id', name: 'id'},
-            {data: 'name', name: 'name'},
+            {data: 'name_ar', name: 'name_ar'},
+            {data: 'name_en', name: 'name_en'},
             {data: 'icon', name: 'icon'},
             {data: 'status', name: 'status'},
             {data: 'action', name: 'action', orderable: false, searchable: false},

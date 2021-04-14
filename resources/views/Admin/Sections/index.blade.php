@@ -75,7 +75,8 @@
                                     <tr>
                                         <th class="sorting_asc" tabindex="0" aria-controls="file_export" rowspan="1" colspan="1" aria-sort="ascending" aria-label=" : activate to sort column descending" style="width: 0px;"> </th>
                                         <th>#</th>
-                                        <th>اسم القسم</th>
+                                        <th> اسم القسم بالعربيه</th>
+                                        <th> اسم القسم بالانجليزيه</th>
                                         <th>شعار القسم</th>
                                         <th> عرض بالرئيسية</th>
                                         <th>اختيارات</th>

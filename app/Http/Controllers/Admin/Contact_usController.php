@@ -71,6 +71,8 @@ class Contact_usController extends Controller
         $Contact_us->team_email=$request->team_email;
         $Contact_us->support_email=$request->support_email;
         $Contact_us->address=$request->address;
+        $Contact_us->about_us_ar=$request->about_us_ar;
+        $Contact_us->about_us_en=$request->about_us_en;
         $Contact_us->save();
     }
 
