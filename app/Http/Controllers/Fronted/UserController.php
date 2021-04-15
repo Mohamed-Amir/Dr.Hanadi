@@ -21,7 +21,8 @@ class UserController extends Controller
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function sign_in  (){
-        return view('Fronted.User.signin');
+        $current=4;
+        return view('Fronted.User.signin',compact('current'));
     }
 
     /**
@@ -37,13 +38,14 @@ class UserController extends Controller
         // attempt to do the login
         if (Auth::attempt($userdata))
         {
-            return response()->json(['status'=>1,'message'=>'log in success']);
+            $msg=getLang() =='ar' ? 'تم تسجيل الدخول بنجاح' : 'log in success';
+            return response()->json(['status'=>1,'message'=>$msg]);
 
         }
         else
         {
-            // validation not successful, send back to form
-            return Redirect::to('checklogin');
+           $msg=getLang() =='ar' ? 'البيانات المدخلة غير صحيحية' : 'invalid email or password';
+            return response()->json(['status'=>0,'message'=>$msg]);
         }
     }
 
@@ -56,7 +58,8 @@ public function myProfile()
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function sign_up  (){
-        return view('Fronted.User.signup');
+        $current=5;
+        return view('Fronted.User.signup',compact('current'));
     }
 
 
@@ -82,6 +85,20 @@ public function myProfile()
         $user->save();
         Auth::login($user);
         return response()->json(['status'=>1,'message'=>'registration success']);
+    }
+
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function profile (){
+        $current=6;
+        return view('Fronted.User.profile',compact('current'));
+    }
+
+    public function logout (){
+        Auth::logout();
+        return redirect('/');
+
     }
 
 

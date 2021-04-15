@@ -7,7 +7,7 @@ return [
     'Contact'=>'Contact Us',
     'login'=>'Sign in',
     'sign_up'=>'sign up',
-    'Name_Here'=>'NameHere',
+    'Name_Here'=>'Name Here',
     'Treatments_Programs'=>'Treatments Programs up',
     'my_profile'=>'my profile',
     'Dr_Hanadi_yousif'=>'Dr.Hanadi yousif',

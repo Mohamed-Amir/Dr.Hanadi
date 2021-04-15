@@ -64,6 +64,7 @@ class DrHanadiController extends Controller
      */
     public function save_info($request,$DrHanadi){
         $DrHanadi->about=$request->about;
+        $DrHanadi->about_ar=$request->about_ar;
         if($request->image) {
             deleteFile('DrHanadi_images',$DrHanadi->image);
             $DrHanadi->image=saveImage('DrHanadi_images',$request->image);

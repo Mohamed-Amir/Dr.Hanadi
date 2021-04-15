@@ -66,6 +66,7 @@
                 $('#formModel').modal();
 
                 $('#about').val(data.about);
+                $('#about_ar').val(data.about_ar);
                 $('#id').val(data.id);
             }
         });

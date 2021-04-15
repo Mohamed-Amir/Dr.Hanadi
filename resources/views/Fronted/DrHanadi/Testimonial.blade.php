@@ -1,5 +1,5 @@
 @php
-    $Testimonial=\App\Models\Testimonial::where('status',1)->get();
+    $Testimonial=\App\Models\Testimonial::where('status',1)->take(3)->orderBy('id','desc')->get();
 @endphp
 <section class="testimonial-section bg-three py-135 rpy-100 rmb-100">
     <div class="container">

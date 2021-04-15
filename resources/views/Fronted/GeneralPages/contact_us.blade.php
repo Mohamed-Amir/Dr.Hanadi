@@ -137,33 +137,5 @@
         }
         google.maps.event.addDomListener(window, 'load', initialize);
     </script>
-    @include('Admin.includes.scripts.AlertHelper')
-    <script>
-        $('#contactform').submit(function (e) {
-            e.preventDefault();
-            $("#save").attr("disabled", true);
 
-            Toset('applying your request', 'info', 'processing your request ', false);
-            var formData = new FormData($('#contactform')[0]);
-            $.ajax({
-                url: '/contact_us',
-                type: "post",
-                data: formData,
-                contentType: false,
-                processData: false,
-                success: function (data) {
-                    if (data.status == 1) {
-
-                        $("#save").attr("disabled", false);
-
-                        $.toast().reset('all');
-                        swal(data.message, {
-                            icon: "success",
-                        });
-                        $('#contactform')[0].reset();
-                    }
-                }
-            });
-        })
-    </script>
     @endsection

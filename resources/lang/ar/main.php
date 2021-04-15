@@ -223,6 +223,7 @@ return [
 	'shopCount'=>'عدد المحلات',
     'numOFShop'=>'اسم المحل',
     'productCount'=>'عدد المنتجات',
+    'about_Us'=>'عن الموقع',
 
 	//validation
 	'nameunique'=>'هذا الاسم مسجل باسم عضو اخر',

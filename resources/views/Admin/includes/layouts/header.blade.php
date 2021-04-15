@@ -112,8 +112,8 @@
                             </div>
                         </div>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="{{route('user.logout')}}">
-                            <i class="fa fa-user m-r-5 m-l-5"></i> الصفحة الشخصية</a>
+{{--                        <a class="dropdown-item" href="{{route('user.logout')}}">--}}
+{{--                            <i class="fa fa-user m-r-5 m-l-5"></i> الصفحة الشخصية</a>--}}
                         <a class="dropdown-item" href="{{route('user.logout')}}">
                             <i class="fa fa-power-off m-r-5 m-l-5"></i> تسجيل الخروج</a>
                         <div class="dropdown-divider"></div>

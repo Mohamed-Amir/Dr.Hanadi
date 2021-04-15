@@ -2,7 +2,7 @@
     function addFunction() {
         save_method = 'add';
 
-        $('#save').text('save');
+        $('#save').text('حفظ');
 
         $('#titleOfModel').text($('#titleOfText').text());
 

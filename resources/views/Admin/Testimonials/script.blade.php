@@ -67,7 +67,7 @@
 
                 $('#formModel').modal();
 
-                $('#Testimonials').val(data.Testimonials);
+                $('#testimonial').val(data.testimonial);
                 $('#name').val(data.name);
                 $('#title').val(data.title);
                 $('#id').val(data.id);

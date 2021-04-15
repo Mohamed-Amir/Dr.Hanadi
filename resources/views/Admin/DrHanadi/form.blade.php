@@ -28,8 +28,15 @@
 
                         <div class="col-md-12">
                             <div class="form-group">
-                                <label for="example-email"> عن الدكتوره  </label>
+                                <label for="example-email"> عن الدكتوره بالانجليزية </label>
                                 <textarea type="text" id="about" name="about"  class="form-control"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="example-email"> عن الدكتوره بالعربية </label>
+                                <textarea type="text" id="about_ar" name="about_ar"  class="form-control"></textarea>
                             </div>
                         </div>
 
@@ -45,3 +52,4 @@
         </div>
     </div>
 </div>
+

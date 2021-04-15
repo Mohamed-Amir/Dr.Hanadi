@@ -31,7 +31,7 @@
                             <div class="section-title text-center mb-95">
                                 <h2>{{trans('hanadi.login')}}</h2>
                             </div>
-                            <form id="sign_inForm" action="{{url('User.sign_in')}}" method="post">
+                            <form id="sign_inForm">
                                 @csrf
                                 <div class="row clearfix">
                                     <div class="col-md-12">
@@ -65,36 +65,6 @@
 
 @endsection
 @section('script')
-    @include('Admin.includes.scripts.AlertHelper')
 
-    <script>
-        $('#sign_inForm').submit(function (e) {
-            e.preventDefault();
-            $("#save").attr("disabled", true);
 
-            Toset('applying your request', 'info', 'processing your request ', false);
-            var formData = new FormData($('#sign_inForm')[0]);
-            $.ajax({
-                url: '/logged',
-                type: "post",
-                data: formData,
-                contentType: false,
-                processData: false,
-                success: function (data) {
-                    if (data.status == 1) {
-
-                        $("#save").attr("disabled", false);
-
-                        $.toast().reset('all');
-                        swal(data.message, {
-                            icon: "success",
-                        });
-                        location.href='/';
-
-                        $("#save").attr("disabled", false);
-                    }
-                }
-            });
-        })
-    </script>
 @endsection

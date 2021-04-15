@@ -21,3 +21,4 @@ header('Content-Type: application/json; charset=UTF-8', true);
 
 
 Route::post('/News', 'Fronted\GeneralController@News')->name('letter.News');
+Route::post('/saveUser', 'Fronted\UserController@saveUser')->name('User.saveUser');

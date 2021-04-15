@@ -6,7 +6,7 @@
                 <div class="about-content">
                     <div class="section-title">
                         <h2>{{trans('hanadi.About_the_life_of_Dr_Hanadi')}}</h2>
-                        <p>{{dr()->about}}</p>
+                        <p>{{getLang() =='ar' ?  dr()->about_ar : dr()->about}}</p>
                     </div>
 
 

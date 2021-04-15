@@ -99,14 +99,14 @@
                                 <div class="col-md-6">
                                     <label for="cars">{{trans('hanadi.desired_weight')}}</label>
                                     <div class="form-group">
-                                        <input type="text" name="desired_weight" id="desired_weight" class="form-control" value="" required="" placeholder="">
+                                        <input type="text" name="desired_weight" id="desired_weight" class="form-control" value=""  placeholder="">
                                     </div>
                                 </div>
 
                                 <div class="col-md-12">
                                     <label for="cars">{{trans('hanadi.How_healthy_is_your_current_lifestyle')}}</label>
                                     <div class="form-group">
-                                        <input type="text" name="current_lifestyle" id="current_lifestyle" class="form-control" value="" required="" placeholder="">
+                                        <input type="text" name="current_lifestyle" id="current_lifestyle" class="form-control" value="" placeholder="">
                                     </div>
                                 </div>
 
@@ -114,7 +114,7 @@
                                     <div class="form-group">
                                         <label for="cars">{{trans('hanadi.Do_you_take_any_medications_If_yes_list_the_names_and_dosages')}}</label>
 
-                                        <textarea name="medications" id="medications" class="form-control" rows="7" required="" placeholder=""></textarea>
+                                        <textarea name="medications" id="medications" class="form-control" rows="7"  placeholder=""></textarea>
 
                                     </div>
                                 </div>
@@ -138,38 +138,8 @@
 @endsection
 
 @section('script')
-    @include('Admin.includes.scripts.AlertHelper')
 
-    <script>
-        $('#sign_upForm').submit(function (e) {
-            e.preventDefault();
-            $("#save").attr("disabled", true);
 
-            Toset('applying your request', 'info', 'processing your request', false);
-            var formData = new FormData($('#sign_upForm')[0]);
-            $.ajax({
-                url: '/saveUser',
-                type: "post",
-                data: formData,
-                contentType: false,
-                processData: false,
-                success: function (data) {
-                    if (data.status == 1) {
-
-                        $("#save").attr("disabled", false);
-
-                        $.toast().reset('all');
-                        swal(data.message, {
-                            icon: "success",
-                        });
-                        location.href='/';
-
-                        $("#save").attr("disabled", false);
-                    }
-                }
-            });
-        })
-    </script>
 
 @endsection
 
